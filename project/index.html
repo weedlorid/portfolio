@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="icon" type="image/x-icon" href="">
+    
+</head>
+<body>
+    <div id="general">
+            <section></section>
+        <section id="collaped-bar">
+            <header>
+                <p>Frontend Dev</p>
+                <div id="animated_menu_icon"  onclick="showSidebar(this)">
+                    <div class="animated_bar bar1"></div>
+                    <div class="animated_bar bar2"></div>
+                    <div class="animated_bar bar3"></div>
+                </div>
+            </header>
+        </section>
+        
+    </div>
+
+    <script>
+        // đóng mở side bar
+        function showSidebar(x){
+            x.classList.toggle("change");
+        }
+    </script>
+</body>
+</html>

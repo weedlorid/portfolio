@@ -1,0 +1,56 @@
+/* set common variables */
+:root{
+    --primary-color: #1503A6;
+    --secondary-color:#A54DDB;
+    --neutral-color:#0F111A;
+    --font-color: white;
+}
+/* reset css */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    color: white;
+}
+/* collapsed bar */
+#collaped-bar{
+    width: 30vw;
+    height: 100vh;
+    position: fixed;
+    right: 0;
+    top: 0;
+    background-color: var(--neutral-color);
+    font-size: 1.1em;
+}
+/* animated icon */
+#animated_menu_icon{
+    cursor: pointer;
+    padding: 5px ;
+    
+}
+header{
+    display: flex;
+    justify-content: space-evenly;
+}
+.animated_bar{
+    width: 10px;
+    border: 1px solid var(--font-color) ;
+    border-radius: 2px;
+    margin: 1px;
+    transition: all .5s;
+}
+.change .bar1{
+    transform: rotate(315deg) translate(-2px, 2px);
+}
+.change .bar2{
+    opacity: 0;
+}
+.change .bar3{
+    transform: rotate(45deg) translate(-2px, -2px);
+}
+/* header */
+header{
+    display: flex;
+}
